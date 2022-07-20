@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@700&family=Tajawal:wght@400;700&display=swap');
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+} 
+
+html {
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Tajawal', sans-serif;
+    background: #d9e2ec;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: #f0f4f8;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #d5d5d5;
+}
+
+p {
+    font-size: 1.6rem;
+    color: #345375;
+    line-height: 2;
+}
+
+/* Nav Section */
+header {
+    background: #014d4d;  
+    color: #f0f4f8;
+}
+
+nav {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1366px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  font-size: 1.6rem;
+  right: 0px;
+}
+
+nav .logo {
+    font-family: 'Kufam', cursive;
+    font-weight: bold;
+    color: #f0f4f8;
+    flex: 4;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    flex: 9;
+}
+
+nav ul li a {
+    display: block;
+    color: #f0f4f8;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: sienna;
+}
+
+
+
+body,html{
+    height: 100%;
+}
+
+
+/* profile side nav bar */
+.mainPage{
+     display: flex; 
+     position: sticky; 
+}
+
+.mainPage .sideBar{
+    position: fixed;
+    top: 10;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background:#033838;
+    background-position-x: right;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    font-size: 15px;
+}
+
+.mainPage .sideBar .choices{
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.mainPage .sideBar .sideChoices{
+    color: #ffffff9d;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.mainPage .sideBar ul li{
+    padding: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(225, 225 , 225, 0.05);
+    font-size: 14px;
+}
+
+.mainPage .sideBar ul li a{
+    color:antiquewhite;
+    display: block;
+}
+
+.mainPage .sideBar ul li a .fas{
+    width: 25px;
+
+}
+
+.mainPage .sideBar ul li a .far{
+    width: 25px;
+
+}
+
+.mainPage .sideBar ul li:hover{
+    background:#055555;
+}
+
+
+.mainPage .main-content{
+    margin-right: 300px;
+    padding: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Aisha's */
+
+label,input,textarea{
+    font-family: inherit;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+} 
+
+form .btn {
+    width: 100px;
+    align-self: center;
+}
+
+input,textarea {
+    width: 80%;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    padding: 0.75rem 2rem;
+    margin: 0 auto;
+}
+
+.mainPage .main-content .add-AD{
+    width: 80%;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    padding: 0.75rem 2rem;
+    margin-left: 50px;
+
+}
+/*Animation */
+
+@keyframes heroBg {
+    form{
+        scale: 1.2;
+    }
+    to{
+        scale: 1;
+    }
+}
+
+
+/* textarea{
+    width: 300px;
+    height: 50px;
+    font-size: 12px;
+} */
+
+textarea::-webkit-input-placeholder {
+    font-size: 12px;
+}
+input::-webkit-input-placeholder {
+    font-size: 12px;
+    line-height: 3;
+}

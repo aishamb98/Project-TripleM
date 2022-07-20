@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@700&family=Tajawal:wght@400;700&display=swap');
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Tajawal', sans-serif;
+    background: #d9e2ec;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: #f0f4f8;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #d5d5d5;
+}
+
+p {
+    font-size: 1.6rem;
+    color: #345375;
+    line-height: 2;
+}
+
+/* Nav Section */
+header {
+    background: #014d4d;  
+    color: #f0f4f8;
+}
+
+nav {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1366px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  font-size: 1.6rem;
+}
+
+nav .logo {
+    font-family: 'Kufam', cursive;
+    font-weight: bold;
+    color: #f0f4f8;
+    flex: 4;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    flex: 9;
+}
+
+nav ul li a {
+    display: block;
+    color: #f0f4f8;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: sienna;
+}
+
+/* hero section */
+.hero {
+height: 90vh;
+position: relative;
+}
+
+.hero::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: heroBg 5s ease-in;
+    background-image:linear-gradient(90deg, rgba(3, 41, 34, 0.2) 0%, rgba(1, 82, 75, 0.8)20%), url("photo2.jpg");
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1366px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 90vh;
+}
+
+h1 span{
+    color: #27ab83;
+}
+
+.btn {
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0.75rem 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    color: #345375;
+}
+
+.btn a {
+    color: #345375;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #9ac5c5;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* about section */
+.about-container {
+    background: #014d4d;
+}
+.about-us {
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-content {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.about-content h2{
+    color: #f0f4f8;
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.about-content p{
+    margin: 1rem;
+    color: #9ac5c5;
+    width: 80%;
+}
+
+.about-us img {
+    height: 100%;
+}
+
+/* contact us */
+.contact {
+    width: 90%;
+    max-width: 1366px;
+    margin: 3rem;
+    height: 100%;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.contact p {
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: maroon;
+} 
+
+
+label,input,textarea{
+    font-family: inherit;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+} 
+
+form .btn {
+    width: 100px;
+    align-self: center;
+}
+
+input,textarea {
+    width: 80%;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    padding: 0.75rem 2rem;
+    margin: 0 auto;
+}
+
+/*Animation */
+
+@keyframes heroBg {
+    form{
+        scale: 1.2;
+    }
+    to{
+        scale: 1;
+    }
+}
+
+/* Ask section */
+.ask {
+    height: 100%;
+    position: relative;
+    }
+    
+    .ask::after {
+        width: 90%;
+        max-width: 1366px;
+        margin: 3rem;
+        height: 100%;
+        padding: 2rem 0;
+        text-align: center;
+    }
+    
+    .asking {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1366px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+    }
+
+    .ask h2 {
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        color: #014d4d;
+        font-size: 3rem;
+    }
+
+    .ask h4 {
+        margin: 0.2rem;
+        color: #086d6d;
+        width: 80%;
+        font-size: 1.5rem;
+    }
+    .ask h5 {
+        margin: 0.2rem;
+        color: #000000;
+        width: 80%;
+        font-size: 1.2rem;
+    }
+
+    .asking-on {
+        margin: auto 5rem;
+    }
+
+    .search {
+        margin-right: 5px;
+        margin-top: 5px;
+        border: 0.1px solid gray;
+        width: max-content;
+        overflow: hidden;
+    }
+
+    button {
+        border: none;
+        cursor: pointer;
+        background-color: white;
+    }
+
+    button i {
+        height: 20px;
+        width: 25px;
+        color: rgb(63, 21, 21);
+        margin-right: 7px;
+    }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="userProfile.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js" integrity="sha512-7dlzSK4Ulfm85ypS8/ya0xLf3NpXiML3s6HTLu4qDq7WiJWtLLyrXb9putdP3/1umwTmzIvhuu9EW7gHYSVtCQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/7e1530c475.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h3 class="logo">منصة الملاعب الاستثمارية</h3>
+                <ul>
+                    <li><a href="homePage.html">الرئيسية</a></li>
+                    <li><a href="Home2.php">الملاعب</a></li>
+                    <li><a href="homePage.html">الأسئلة الشائعة</a></li>
+                    <li><a href="homePage.html">من نحن</a></li>
+                    <li><a href="homePage.html">تواصل معنا</a></li>
+                       
+                    <li>
+                        <!-- <form action="signIn.html"> 
+                            <input type="submit" value="تسجيل دخول">-->
+
+
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="mainPage" style="position: sticky;">
+            <div class="sideBar" style="position: fixed;">
+                <h2 class="choices">قائمة الاختيارات</h2>
+                
+                    <h3 class="sideChoices">الخدمات</h3>
+                        <ul>
+                         <li><a href="addService.html" style="text-decoration: none;"><i class="fas fa-plus"></i>إضافة خدمة</a></li>
+                         <li><a href="alls.php" style="text-decoration: none;"><i class="fas fa-list"></i>جميع الخدمات</a></li>
+                        </ul>
+                    <h3 class="sideChoices">الإعلانات</h3>
+                    <ul>
+                        <li><a href="addAD.html" style="text-decoration: none;"><i class="fas fa-plus"></i>إضافة إعلان</a></li>
+                        <li><a href="allAD.php" style="text-decoration: none;"><i class="fas fa-list"></i>جميع الإعلانات</a></li>
+                    </ul>
+                    <h3 class="sideChoices">التقارير</h3>
+                    <ul>
+                        <li><a href="reports.php" style="text-decoration: none;"><i class="fas fa-chart-line"></i>عرض التقارير</a></li>
+                    </ul>
+                    <h3 class="sideChoices">أخرى</h3>
+                    <ul>
+                        <li><a href="logout.php" style="text-decoration: none;"><i class="fas fa-sign-out-alt"></i>تسجيل خروج</a></li>
+                    </ul>
+            </div>
+
+
+    <body>
+        <div class="main-content" style="padding-right: 350px;">
+
+        <form class="add-AD" action="addAD.php" method="POST" > 
+            <h2 style="text-align: center;font-size: 30px;margin-right: -300px;">نموذج إضافة إعلان</h2>
+            <br><br><br>
+            <label style="margin-right: -300px;">عنوان الإعلان: </label>
+            <input class="AD-info" style="width: 500px;height: 50px; font-size: 12px;margin-top: -30px;margin-right:-200px;" type="text" name = "title" required>
+            <br><br>
+            <!-- <label style="margin-right: -300px;">إرفاق صورة: </label> -->
+            <!-- <input class="AD-info" type="file" name = "addpicture" value="ارفق صورة"> -->
+            <!-- <br><br> -->
+            <label style="margin-right: -300px;">محتوى الإعلان: </label>
+            <br><br>
+            <textarea class="AD-info" style="width: 500px;height: 50px; font-size: 12px;margin-right: -200px;margin-top: -50px;" name="ADsubject" cols="30" rows="10" placeholder="اكتب إعلانك"></textarea>
+            <br><br>
+                <form action="addAD.php" method="POST">
+                <input class="submit-AD" type="submit" value="إضافة" style="height: 50px;margin-right: -120px;">
+                </form>
+
+        </form>
+    </div>
+    </body>
+
+</html>

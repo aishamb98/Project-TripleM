@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="userProfile.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js" integrity="sha512-7dlzSK4Ulfm85ypS8/ya0xLf3NpXiML3s6HTLu4qDq7WiJWtLLyrXb9putdP3/1umwTmzIvhuu9EW7gHYSVtCQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/7e1530c475.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h3 class="logo">منصة الملاعب الاستثمارية</h3>
+                <ul>
+                    <li><a href="homePage.html">الرئيسية</a></li>
+                    <li><a href="Home2.php">الملاعب</a></li>
+                    <li><a href="homePage.html">الأسئلة الشائعة</a></li>
+                    <li><a href="homePage.html">من نحن</a></li>
+                    <li><a href="homePage.html">تواصل معنا</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <div class="mainPage" style="position: absolute;">
+            <div class="sideBar" style="position: fixed;">
+                <h2 class="choices">قائمة الاختيارات</h2>
+                
+                    <h3 class="sideChoices">الخدمات</h3>
+                        <ul>
+                         <li><a href="addService.html" style="text-decoration: none;"><i class="fas fa-plus"></i>إضافة خدمة</a></li>
+                         <li><a href="alls.php" style="text-decoration: none;"><i class="fas fa-list"></i>جميع الخدمات</a></li>
+                        </ul>
+                    <h3 class="sideChoices">الإعلانات</h3>
+                    <ul>
+                        <li><a href="addAD.html" style="text-decoration: none;"><i class="fas fa-plus"></i>إضافة إعلان</a></li>
+                        <li><a href="allAD.php" style="text-decoration: none;"><i class="fas fa-list"></i>جميع الإعلانات</a></li>
+                    </ul>
+                    <h3 class="sideChoices">التقارير</h3>
+                    <ul>
+                        <li><a href="reports.php" style="text-decoration: none;"><i class="fas fa-chart-line"></i>عرض التقارير</a></li>
+                    </ul>
+                    <h3 class="sideChoices">أخرى</h3>
+                    <ul>
+                        <li><a href="logout.php" style="text-decoration: none;"><i class="fas fa-sign-out-alt"></i>تسجيل خروج</a></li>
+                    </ul>
+            </div>
+            <div class="main-content">
+
+
+
+
+
+                <form class="add-AD-form" action="investor.php" method="POST">  
+                    <h2 style="text-align: center;font-size: 30px;">نموذج إضافة ملعب</h2>
+                    <br><br><br>
+                    <label for="Stadium Type"> نوع الملعب: <label>
+                    <select name="StadiumType" required style="margin-right: 50px;">
+                        <option  selected hidden value=""> قم بالإختيار </option>
+                        <option  value="كرة قدم"> كرة قدم </option>
+                        <option  value="كرة طائرة"> كرة طائرة </option>
+                        <option  value="كرة سلة"> كرة سلة </option>
+                        <option  value="تنس"> تنس </option>
+                        <option  value="اخرى"> أخرى </option>
+                        <!-- <textarea class="add-AD-txt" style="width: 300px;height: 50px; font-size: 12px;" name="subject" cols="30" rows="10" placeholder="اذا قمت باختيار (أخرى) قم بكتابة نوع الملعب هنا  "></textarea> -->
+                    </select>
+                    <br>
+                    <textarea class="add-AD-txt" style="width: 500px;height: 50px; font-size: 12px;margin-right: 130px;" name="subject" cols="30" rows="10" placeholder="اذا قمت باختيار (أخرى) قم بكتابة نوع الملعب هنا  "></textarea>
+                    <br><br>
+                    <label for="Playground Area"> مساحة الملعب: </label>
+                    <select name="PlaygroundArea" style="margin-right: 20px;" required>
+                        <option  value="18.3*27.45"> 18.3*27.45 </option>
+                        <option  value="27.45*45.75"> 27.45*45.75 </option>
+                        <option  value="36.6*54.9"> 36.6*54.9 </option>
+                        <option value="42*64.62"> 42*64.62 </option>
+                        <option  value="42*70"> 42*70 </option>
+                        <option  value="50.77*73.85"> 50.77*73.85 </option>
+                        <option  value="56*82"> 56*82 </option>
+                        <option  value="45*90"> 45*90 </option>
+                        <option value="90*120"> 90*120 </option>
+                        <option  value="68*105"> 68*105 </option>
+                        <option value="اخرى"> اخرى</option>
+                    </select>
+
+                    <br><br>
+                    <label> اسم الملعب: </label>
+                    <input type="text" style="margin-right: 125px;margin-top: -50px;"  name = "name" required>
+            
+                    <br><br>
+                    <label for="Categories"> التصنيف: </label>
+                    <select style="margin-right: 60px;" name="Categories" required>
+                        <option  value="رباعي">رباعي</option>
+                        <option  value="خماسي">خماسي</option>
+                        <option  value="سداسي">سداسي</option>
+                        <option  value="ثماني">ثماني</option>
+                        <option  value="تساعي">تساعي</option>
+                        <option  value="قانوني">قانوني</option>
+                    </select>
+            
+                    <!-- <br><br> 
+                    <label> الوصف: </label>
+                    <br>
+                    <textarea style="margin-right: 125px;" class="add-AD-txt" style="width: 300px;font-size: 12px;" name="subject" cols="30" rows="10" placeholder="يمكنك كتابة وصف للمعلب و المرافق و الخدمات المتوفرة"></textarea>
+                     -->
+                    <br><br>
+                    <label> الموقع: </label>
+                    <input type="url" style="margin-right: 125px;margin-top: -50px;" name="location" placeholder="الرجاء إدخال رابط موقع الملعب (google maps)">
+            
+                    <br><br>
+                    <label> رقم التواصل: </label>
+                    <input type="text" style="margin-right: 125px;margin-top: -50px;" name ="contact" required>
+            
+                    <br><br>
+                    <label> السعر: </label>
+                    <input type="text" style="margin-right: 125px;margin-top: -50px;" name ="price" required>
+            
+                    <br><br>
+                    <label> إرفاق صورة: </label>
+                    <input type="file" style="margin-right: 125px;margin-top: -50px;" name = "picture" value="يمكنك اختيار اكثر من صورة" multiple>
+            
+                    <br><br>
+                    <input type="submit" class="add-button" style="margin-right: 125px;margin-top: -50px;" value="إضافة">
+                    
+                </form>
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html> 
+
+<html>
+
+    <head>
+        <meta charset = "UTF-8 ">
+        
+    </head>
+
+    <body>
+       
+        <header> إضافة خدمة </header>
+
+        <form action="investor.php" method="POST">  
+    
+        <label for="Stadium Type"> :نوع الملعب <label>
+        <select name="StadiumType" required>
+            <option  selected hidden value=""> قم بالإختيار </option>
+            <option  value="كرة قدم"> كرة قدم </option>
+            <option  value="كرة طائرة"> كرة طائرة </option>
+            <option  value="كرة سلة"> كرة سلة </option>
+            <option  value="تنس"> تنس </option>
+            <option  value="اخرى"> أخرى </option>
+            <textarea name="subject" cols="30" rows="10" placeholder="اذا قمت باختيار (أخرى) قم بكتابة نوع الملعب هنا  "></textarea>
+        </select>
+
+        <label for="Playground Area"> مساحة الملعب </label>
+        <select name="PlaygroundArea" required>
+            <option  value="18.3*27.45"> 18.3*27.45 </option>
+            <option  value="27.45*45.75"> 27.45*45.75 </option>
+            <option  value="36.6*54.9"> 36.6*54.9 </option>
+            <option value="42*64.62"> 42*64.62 </option>
+            <option  value="42*70"> 42*70 </option>
+            <option  value="50.77*73.85"> 50.77*73.85 </option>
+            <option  value="56*82"> 56*82 </option>
+            <option  value="45*90"> 45*90 </option>
+            <option value="90*120"> 90*120 </option>
+            <option  value="68*105"> 68*105 </option>
+            <option value="اخرى"> اخرى</option>
+        </select>
+
+        <br>
+        <label> اسم الملعب </label>
+        <input type="text" name = "name" required>
+
+        <label for="Categories"> التصنيف </label>
+        <select name="Categories" required>
+            <option  value="رباعي">رباعي</option>
+            <option  value="خماسي">خماسي</option>
+            <option  value="سداسي">سداسي</option>
+            <option  value="ثماني">ثماني</option>
+            <option  value="تساعي">تساعي</option>
+            <option  value="قانوني">قانوني</option>
+        </select>
+
+        <label> الوصف </label>
+        <textarea name="subject" cols="30" rows="10" placeholder="يمكنك كتابة وصف للمعلب و المرافق و الخدمات المتوفرة"></textarea>
+
+        <br>
+        <label> الموقع </label>
+        <input type="url" name="location">
+
+        </label> رقم التواصل </label>
+        <input type="text" name ="contact" required>
+
+        </label> السعر </label>
+        <input type="text" name = "price" required>
+
+        <label> ارفاق صورة </label>
+        <input type="file" name = "picture" value="يمكنك اختيار اكثر من صورة" multiple>
+
+        <br> 
+        <form 
+        action="investor.php">
+        <input type="submit" value="إضافة">
+        </form>
+
+    </form>
+
+    </body>
+
+</html>-->

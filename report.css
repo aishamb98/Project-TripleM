@@ -1,0 +1,16 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #6aaaaa;
+}
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+    background-color: #d9e2ec;
+    height: 400px;
+    margin-top: 10px;
+}

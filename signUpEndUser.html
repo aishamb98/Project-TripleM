@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="styleSignUpEnd.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" >
+            <h3> منصة الملاعب الاستثمارية</h3>
+            <p>مرحبا بكم في منصة الملاعب ، للحجز املأ البيانات التاليه</p>
+        </nav>
+    </header>
+    <div class="booking">
+        <form action="indexEndUser.php" method="POST">
+
+            <!-- <label">البريد الإلكتروني</label> -->
+            <input name="mailNew" type="email" required placeholder="أدخل عنوان البريد الإلكتروني">
+            <br><br>
+            <!-- <label>كلمة المرور</label> -->
+            <input name="passNew" type="password" required placeholder="أدخل كلمة المرور">
+            <br><br>
+            <!-- <label>اسم المستخدم</label> -->
+            <input name="usernameNew" type="text" required placeholder="أدخل اسم المستخدم">
+            <br><br>
+            <!-- <label>رقم الجوال</label> -->
+            <input name="phoneNew" type="text" required placeholder="أدخل رقم الجوال">
+            <br><br>
+            <!-- <label>أدخل عمرك</label> -->
+            <input name="age" type="number" min="18" max="99" step="1" required placeholder="أدخل عمرك">
+            <br><br>
+            <input type="radio" name="genderEndUser" value="ذكر" id="male">
+            <input type="radio" name="genderEndUser" value="أنثى" id="female">
+            <div class="gender-category">
+                <label for="male">
+                    <span class="dot one"></span>
+                    <span class="gender">ذكر</span>
+                </label>
+                <label for="female">
+                    <span class="dot two"></span>
+                    <span class="gender">أنثى</span>
+                </label>
+            </div>
+            <br><br>
+            <input class="bot" type="submit" name="submit" value="تسجيل">
+            <br><br>
+        </form>
+    </div>   
+    <footer>
+        <br>
+        <form action="homePage.html">
+            <input class="bot" type="submit" value="الرجوع للصفحة الرئيسية">
+        </form>
+    </footer>
+
+</body>
+</html>
